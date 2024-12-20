@@ -149,12 +149,9 @@ export PATH=$PATH:/snap/racket/current/usr/bin
 # Created by `pipx` on 2024-11-28 15:29:40
 export PATH="$PATH:/home/kacper/.local/bin"
 export MANPAGER="nvim --clean +Man!"
-#export MANPAGER="vim -c ':set shortmess=SFqCcIAWTtsOoa'-M +MANPAGER -" 
-#export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
-#export PATH=/home/kacper/lynx_conf/dotfiles-master-common-lynx/common/lynx:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/usr/local/go/bin:/home/kacper/go/bin:/opt/purevpn-cli/bin:/home/kacper/.spicetify:/home/kacper/BashScript:/home/kacper/go/bin:/snap/racket/current/usr/bin:/home/kacper/.local/bin
+
 
 # lynx search
-
 
 urlencode () {
     declare str="$*"
