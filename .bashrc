@@ -181,5 +181,8 @@ google () {
 }
 
 alias "??"=google
-        
-   
+
+# don't put duplicate lines or lines with space in the history
+# see bash(1) for more options
+HISTCONTROL=ignoreboth:erasedups
+

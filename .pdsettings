@@ -12,7 +12,8 @@ audioblocksize: 64
 midiapi: 0
 nomidiin: True
 nomidiout: True
-npath: 0
+path1: /home/kacper/Documents/Pd/externals
+npath: 1
 standardpath: 1
 verbose: 0
 nloadlib: 0
