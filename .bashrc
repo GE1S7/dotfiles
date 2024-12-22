@@ -186,3 +186,6 @@ alias "??"=google
 # see bash(1) for more options
 HISTCONTROL=ignoreboth:erasedups
 
+# do not overwrite when passing output to file 
+set -o noclobber
+
