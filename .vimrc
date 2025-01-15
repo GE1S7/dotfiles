@@ -1,3 +1,25 @@
+set nocompatible              " required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Bundle 'Valloric/YouCompleteMe'
+Plugin 'python-mode/python-modei'
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
 source $VIMRUNTIME/defaults.vim
 " $VIMRUNTIME refers to the versioned system directory where Vim stores its
 " system runtime files -- /usr/share/vim/vim<version>.
@@ -71,4 +93,5 @@ endif
 set shortmess=a
 set cmdheight=2
 
-
+"open new split panes to the right
+set splitright

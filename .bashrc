@@ -189,3 +189,5 @@ HISTCONTROL=ignoreboth:erasedups
 # do not overwrite when passing output to file 
 set -o noclobber
 
+
+
