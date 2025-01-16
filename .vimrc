@@ -12,6 +12,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'python-mode/python-modei'
+Plugin 'puremourning/vimspector'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -95,3 +96,5 @@ set cmdheight=2
 
 "open new split panes to the right
 set splitright
+
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
