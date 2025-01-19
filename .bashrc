@@ -189,5 +189,5 @@ HISTCONTROL=ignoreboth:erasedups
 # do not overwrite when passing output to file 
 set -o noclobber
 
-
+alias jellyfin-mpv-shim="flatpak run com.github.iwalton3.jellyfin-mpv-shim"
 
