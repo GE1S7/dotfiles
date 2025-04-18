@@ -15,6 +15,9 @@ HISTCONTROL=ignoreboth
 # append to the history file, don't overwrite it
 shopt -s histappend
 
+#run in vi mode
+set -o vi
+
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=1000
 HISTFILESIZE=2000
@@ -57,9 +60,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\[\a\]\$ '
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\[\a\]\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -191,3 +194,17 @@ set -o noclobber
 
 alias jellyfin-mpv-shim="flatpak run com.github.iwalton3.jellyfin-mpv-shim"
 
+alias ssh-kube="ssh -L 63840:localhost:63840 -L 8080:localhost:8080 homelab"
+
+echo Is this a dream?
+
+alias ls="lsd"
+export PATH=$PATH:/home/kacper/.emacs.d/bin/
+
+#emacs client shorthand
+alias emacs="emacsclient -c -a 'emacs'"
+
+[[ -s /home/kacper/.autojump/etc/profile.d/autojump.sh ]] && source /home/kacper/.autojump/etc/profile.d/autojump.sh
+
+alias electrum="/home/kacper/electrum-4.5.8-x86_64.AppImage"
+alias venv="source $PWD/venv/bin/activate"
