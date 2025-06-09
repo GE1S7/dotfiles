@@ -13,6 +13,7 @@ Plugin 'gmarik/Vundle.vim'
 Bundle 'Valloric/YouCompleteMe'
 Plugin 'python-mode/python-modei'
 Plugin 'puremourning/vimspector'
+Plugin 'elixir-editors/vim-elixir'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -60,7 +61,7 @@ endif
 
 " If using a dark background within the editing area and syntax highlighting
 " turn on this option as well
-"set background=dark
+set background=dark
 
 " Uncomment the following to have Vim jump to the last position when
 " reopening a file
